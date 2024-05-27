@@ -1,0 +1,93 @@
+---
+title: "Optimisation Yoann"
+output: pdf_document
+date: "2024-03-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Définition des données
+n <- 5  # Nombre d'étudiants
+p <- 5  # Nombre de stagess
+
+# Génération aléatoire des préférences des étudiants pour les stages
+preferences <- matrix(NA, nrow = n, ncol = p)
+for (i in 1:n) {
+  preferences[i, ] <- sample(1:p)
+}
+
+# Fonction d'évaluation d'une affectation
+evaluate_assignment <- function(assignment, preferences) {
+  total_score <- 0
+  for (i in 1:length(assignment)) {
+    student_preferences <- preferences[i, ]
+    assigned_stage <- assignment[i]
+    total_score <- total_score + (p + 1 - match(assigned_stage, student_preferences))
+  }
+  return(total_score)
+}
+
+# Algorithme d'optimisation avec chaque stage attribué une seule fois et sélection optimale
+optimize_assignment_unique_optimal <- function(preferences, max_iter = 1000) {
+  best_assignment <- sample(1:p, n, replace = FALSE)  # Utilisation de sample() sans remplacement
+  best_score <- evaluate_assignment(best_assignment, preferences)
+  assigned_stages <- list()
+  
+  for (iter in 1:max_iter) {
+    new_assignment <- sample(1:p, n, replace = FALSE)  # Utilisation de sample() sans remplacement
+    new_score <- evaluate_assignment(new_assignment, preferences)
+    new_assigned_stages <- list()
+    
+    for (i in 1:n) {
+      assigned_stage <- new_assignment[i]
+      
+      # Vérification si le stage a déjà été attribué
+      while (assigned_stage %in% unlist(assigned_stages)) {
+        # Comparaison des scores et sélection du stage le plus optimal
+        current_score <- evaluate_assignment(new_assignment, preferences)
+        if (current_score > new_score) {
+          new_assignment[i] <- sample(setdiff(1:p, new_assigned_stages), 1)  # Choix d'un autre stage non attribué
+          assigned_stage <- new_assignment[i]
+          new_score <- current_score
+        } else {
+          break  # Arrêt si le score actuel est inférieur ou égal
+        }
+      }
+      new_assigned_stages <- c(new_assigned_stages, assigned_stage)
+    }
+    
+    if (!is.na(new_score) && new_score > best_score && length(unique(new_assignment)) == n) {
+      best_assignment <- new_assignment
+      best_score <- new_score
+    }
+    
+    assigned_stages <- c(assigned_stages, list(new_assigned_stages))
+  }
+  
+  return(list(assignment = best_assignment, score = best_score))
+}
+
+# Exécution de l'algorithme avec chaque stage attribué une seule fois et sélection optimal
+result_unique_optimal <- optimize_assignment_unique_optimal(preferences)
+
+# Affichage des résultats
+cat("Préférences des étudiants pour les stages:\n")
+for (i in 1:n) {
+  cat("Étudiant", i, ": ", preferences[i, ], "\n")
+}
+cat("\n")
+
+cat("Meilleure affectation avec chaque stage attribué une seule fois et sélection optimal:\n")
+for (i in 1:n) {
+  cat("Étudiant", i, "→ Stage", result_unique_optimal$assignment[i], "\n")
+}
+cat("\n")
+
+cat("Score de l'affectation avec chaque stage attribué une seule fois et sélection optimal:", result_unique_optimal$score, "\n")
+
+
+```
+

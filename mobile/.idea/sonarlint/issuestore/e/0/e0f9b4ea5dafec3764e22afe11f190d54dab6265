@@ -1,0 +1,22 @@
+
+k	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ì×˜ùÿÿÿÿ
+C
+java:S1604R"(Make this anonymous inner class a lambda(÷½“–ÿÿÿÿÿ
+>
+java:S1604["(Make this anonymous inner class a lambda(€µß‹
+C
+java:S1604h"(Make this anonymous inner class a lambda(ùË‚ùÿÿÿÿ
+l
+java:S1104"QMake offre a static final constant or non-public and provide accessors if needed.(Æµ° şÿÿÿÿ
+n	java:S1160"TRename this field "nb_offres" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Õùÿÿÿÿ
+l	java:S1165"RRename this field "no_page" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßİ®áúÿÿÿÿ
+m	java:S1165"SRename this field "nb_pages" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßİ®áúÿÿÿÿ
+A
+java:S16595"&Declare "nb_pages" on a separate line.(ßİ®áúÿÿÿÿ
+k
+java:S1450;"URemove the "retour" field and declare it as a local variable in the relevant methods.(¹“´Ù
+m	java:S116"SRename this field "no_entry" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚şÑäûÿÿÿÿ
+
+java:S1186Ÿ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+G
+java:S1068",Remove this unused "no_entry" private field.(‚şÑäûÿÿÿÿ

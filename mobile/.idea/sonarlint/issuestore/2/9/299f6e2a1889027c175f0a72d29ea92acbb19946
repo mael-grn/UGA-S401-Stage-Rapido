@@ -1,0 +1,15 @@
+
+œ
+java:S1192S"YDefine a constant instead of duplicating this literal "Un problÃ¨me est survenu" 3 times.(ÚüÌ™8¸ß˜¦ê1J$60873fbb-989c-4448-8ec6-b73a07a8e70c
+p
+java:S16044"(Make this anonymous inner class a lambda(Ñ¿•Öÿÿÿÿÿ8ºß˜¦ê1J$1483bf50-53e4-40e9-b353-31bc5ec435c1
+ 
+java:S1450'"XRemove the "loginView" field and declare it as a local variable in the relevant methods.(‡©ÿÿÿÿÿ8âà˜¦ê1J$54dffbfd-9890-4544-88ad-4af1237d66c5
+š
+java:S3776Z"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(»µÕãûÿÿÿÿ8…á˜¦ê1J$30af7c61-412b-47af-945b-e03395f263c6
+Ê
+java:S1186Š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ8¡á˜¦ê1J$71a5badf-3d63-43b1-af7f-600e0be6a7e2
+Ê
+java:S1186š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ8©á˜¦ê1J$eaca99a9-1dbc-46af-9a9f-6c3dabcb5262
+Ê
+java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ8®á˜¦ê1J$fc481358-28bc-4f96-a746-8817b07c8ea5

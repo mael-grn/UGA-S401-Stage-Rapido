@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <!-- Conteneur pour les données de candidature -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Titre de l'intitulé -->
+        <TextView
+            android:id="@+id/intitule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Intitulé"
+            android:textSize="20sp" />
+
+        <!-- État de la candidature -->
+        <TextView
+            android:id="@+id/etatCandidature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="État de la candidature" />
+
+    </LinearLayout>
+
+    <!-- Flèche de navigation -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003E"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

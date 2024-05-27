@@ -1,0 +1,13 @@
+
+>
+java:S1604:"(Make this anonymous inner class a lambda(ëˆ«
+C
+java:S1604B"(Make this anonymous inner class a lambda(»Úò¶şÿÿÿÿ
+v
+java:S1450$"[Remove the "intituleView" field and declare it as a local variable in the relevant methods.(Šà §ûÿÿÿÿ
+t
+java:S1450'"^Remove the "mettreAJourView" field and declare it as a local variable in the relevant methods.(¥¶Ñ¬
+z
+java:S1450#"eRemove the "retourCandidaturesView" field and declare it as a local variable in the relevant methods.(õÈÂV
+œ
+java:S1186]"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ

@@ -1,0 +1,91 @@
+---
+title: "Optimisation Groupe 13"
+output: pdf_document
+date: "2024-03-12"
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+--------
+$$ 
+$$
+\begin{center}
+\textbf{\underline{Le problème est le suivant :}}
+\end{center}
+On dispose de $n$ stages et de $p$ étudiants.
+
+Les étudiants classent les
+stages selon un ordre de préférence.
+On cherche à associer un stage à un étudiant, et ce en utilisant l'algorithme de Kuhn ( ou méthode hongroise).
+$$ 
+$$
+```{r}
+# Définition des données
+n <- 10  # Nombre d'étudiants
+p <- 10  # Nombre de stages
+
+# Génération aléatoire des préférences des étudiants pour les stages
+preferences <- matrix(NA, nrow = n, ncol = p)
+for (i in 1:n) {
+  preferences[i, ] <- sample(1:p)
+}
+
+
+# Fonction d'évaluation d'une affectation
+evaluate_assignment <- function(assignment, preferences) {
+  total_score <- 0
+  for (i in 1:length(assignment)) {
+    student_preferences <- preferences[i, ]
+    assigned_stage <- assignment[i]
+    total_score <- total_score + (p + 1 - match(assigned_stage, student_preferences))
+  }
+  return(total_score)
+}
+
+# Algorithme d'optimisation
+optimize_assignment <- function(preferences, max_iter = 1000) {
+  best_assignment <- sample(1:p, n, replace = TRUE)
+  best_score <- evaluate_assignment(best_assignment, preferences)
+  
+  for (iter in 1:max_iter) {
+    new_assignment <- sample(1:p, n, replace = TRUE)
+    new_score <- evaluate_assignment(new_assignment, preferences)
+    
+    if (!is.na(new_score) && new_score > best_score) {
+      best_assignment <- new_assignment
+      best_score <- new_score
+    }
+  }
+  
+  return(list(assignment = best_assignment, score = best_score))
+}
+
+
+# Exécution de l'algorithme
+result <- optimize_assignment(preferences)
+
+# Affichage des résultats
+cat("Préférences des étudiants pour les stages:\n")
+for (i in 1:n) {
+  cat("Étudiant", i, ": ", preferences[i, ], "\n")
+}
+cat("\n")
+
+cat("Meilleure affectation :\n")
+for (i in 1:n) {
+  cat("Étudiant", i, "→ Stage", result$assignment[i], "\n")
+}
+cat("\n")
+
+cat("Score de l'affectation :", result$score, "\n")
+
+
+
+
+
+```
+

@@ -1,0 +1,5 @@
+
+f	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ФЏпЎ
+h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†„гош€€€€
+O
+java:S2864A"4Iterate over the "entrySet" instead of the "keySet".(м±ъ©ю€€€€

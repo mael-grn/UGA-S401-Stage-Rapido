@@ -1,0 +1,17 @@
+
+>
+java:S1604,"(Make this anonymous inner class a lambda(«Œîå
+u
+java:S1450"_Remove the "candidaturesView" field and declare it as a local variable in the relevant methods.(†™­ˆ
+t
+java:S1450"YRemove the "offresView" field and declare it as a local variable in the relevant methods.(äåùŞşÿÿÿÿ
+œ
+java:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+œ
+java:S1186^"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+œ
+java:S1186u"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+J
+java:S1068"4Remove this unused "candidaturesView" private field.(†™­ˆ
+C
+java:S1068 "-Remove this unused "offreView" private field.(ıÖß

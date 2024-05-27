@@ -1,0 +1,22 @@
+
+f	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö›ÒÀ
+g	java:S117—"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Ü•¾
+>
+java:S1604C"(Make this anonymous inner class a lambda(…ûä¬
+C
+java:S1604N"(Make this anonymous inner class a lambda(÷½“–ÿÿÿÿÿ
+h	java:S116+"SRename this field "offre_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îşèé
+k
+java:S1450#"URemove the "retour" field and declare it as a local variable in the relevant methods.(¹“´Ù
+T
+java:S1155h">Use isEmpty() to check whether the collection is empty or not.(ëÈÛø
+œ
+java:S1186~"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+
+java:S1186‘"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+
+java:S1186¢"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+
+java:S1186·"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíûÿÿÿÿ
+B
+java:S1068+",Remove this unused "offre_id" private field.(îşèé

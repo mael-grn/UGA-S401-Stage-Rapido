@@ -1,0 +1,6 @@
+
+h	java:S116"NRename this field "_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾êàãúÿÿÿÿ
+j	java:S116"PRename this field "_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÝŽŽŠúÿÿÿÿ
+U
+java:S1128
+"?Remove this unused import 'org.jetbrains.annotations.Nullable'.(ž·½Ç

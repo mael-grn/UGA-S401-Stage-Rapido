@@ -1,0 +1,13 @@
+
+o
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(˜þ¢–
+C
+java:S16042"(Make this anonymous inner class a lambda(þîüòúÿÿÿÿ
+>
+java:S16049"(Make this anonymous inner class a lambda(«Ó•È
+u
+java:S1450"_Remove the "candidaturesView" field and declare it as a local variable in the relevant methods.(û¬Ý¬
+|
+java:S1450"aRemove the "retourSyntheseView" field and declare it as a local variable in the relevant methods.(š×ƒëþÿÿÿÿ
+œ
+java:S1186X"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºéíŽûÿÿÿÿ
